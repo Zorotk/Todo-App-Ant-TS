@@ -31,7 +31,7 @@ export const TodoList: React.FC<TodoList> = ({ data, toggle, remove, filter, sea
                      onOk={handleOk}
         onCancel={handleCancel}
             >
-                {data.map((el, i) => { if (el.id === curentDescription) { return (<div><div>Подробно№{el.id }</div>{el.title}</div>)} return })}
+                {data.map((el, i) => { if (el.id === curentDescription) { return (<div key={el.id}><div>Подробно№{el.id }</div>{el.title}</div>)} return null})}
       
       </Modal>
   

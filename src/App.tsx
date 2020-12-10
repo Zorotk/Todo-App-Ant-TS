@@ -20,10 +20,7 @@ const App: React.FC = () => {
         
        fetchTodo()
     },[])
-console.log(loading)
-  
 
-    console.log(data)
     const dataHandler = (title: string) => {
         const newData: TodoInterface = {title: title, id: Date.now(), completed: false}
         setdata(prev => [newData, ...prev])
@@ -45,10 +42,7 @@ console.log(loading)
         const should = confirm('удалить')
         if (should) {
             setdata(prev => prev.filter(d => d.id !== id))
-    //           fetch('https://5fd0ffe1b485ea0016eedd3b.mockapi.io/api/v1/todo/',{
-    //     method: "DELETE",
-    //     body: JSON.stringify(data)}
-    // )
+ 
         }
 
     }

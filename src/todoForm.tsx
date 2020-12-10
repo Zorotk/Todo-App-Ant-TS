@@ -29,17 +29,11 @@ const TodoForm: React.FC<TodoFormProps> = (props) => {
     return (
         <div className={'todo-form'}>
             <div>
-
-
             </div>
-
-
                     <Input value={iputValue} onKeyPress={keyPress} placeholder={'добавить задачу'}
                            onChange={inputHandler}/>
-
                     <Button onClick={addTodo}>добавить</Button>
         </div>
-
 );
 };
 

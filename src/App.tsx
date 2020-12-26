@@ -7,6 +7,12 @@ import {Radio, Input} from "antd";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Extends from "./components/extends/exstend";
 
+
+import {useDispatch, useSelector} from "react-redux";
+import {increment} from "./components/toolkitRudux/reducer";
+import Button from "antd/es/button";
+
+
 declare var confirm: (question: string) => boolean
 
 export interface TodoInterface {
@@ -15,18 +21,27 @@ export interface TodoInterface {
     completed: boolean;
 }
 
+interface RootState {
+    toolkit: any,
+    count: number
+}
+
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true)
     const [data, setdata] = useState<TodoInterface[]>([])
     useEffect(() => {
-
         fetchTodo()
     }, [])
+
+    const count = useSelector((state: RootState) => state.toolkit.count)
+    const dispatch = useDispatch()
 
     const dataHandler = (title: string) => {
         const newData: TodoInterface = {title: title, id: Date.now(), completed: false}
         setdata(prev => [newData, ...prev])
     }
+
+
     const toggleHandler = (id: number) => {
         setdata(prev => prev.map(d => {
             if (d.id === id) {
@@ -61,6 +76,8 @@ const App: React.FC = () => {
                 <Route path={'/extends'} component={Extends}/>
             </Switch>
             <div className={'todo'}>
+                {count}
+                <Button onClick={() => dispatch(increment())}>+</Button>
                 <Input className={'search'} placeholder={'поиск'} value={searchTodo}
                        onChange={(e) => setsearchTodo(e.target.value)}/>
                 <Radio.Group onChange={onChange} value={value}>
@@ -72,8 +89,8 @@ const App: React.FC = () => {
                 <TodoForm onAdd={dataHandler}/>
                 <TodoList data={data} toggle={toggleHandler} remove={removeHandler}
                           filter={value} search={searchTodo} loading={loading}/>
-            </div>
 
+            </div>
         </BrowserRouter>
     );
 };

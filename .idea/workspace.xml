@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16f88c9c-8213-4d8d-b9ed-b8f648eef1c8" name="Default Changelist" comment="" />
+    <list default="true" id="16f88c9c-8213-4d8d-b9ed-b8f648eef1c8" name="Default Changelist" comment="redux toolkit">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/extends/exstend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/extends/exstend.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +26,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lPMlvSlgY0U1w4VsW7SQbsDZWD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="A:\project\itg2\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\project\itg2\src\components" />
+      <recent name="A:\project\itg2\src\components\extends" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -34,8 +59,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Node.js.learn.js">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="klass.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="klass.js" working-dir="$USER_HOME$/Desktop/magistr/project">
+      <method v="2" />
+    </configuration>
+    <configuration name="learn.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="learn.js" working-dir="$USER_HOME$/Desktop/js">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -48,6 +79,12 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.learn.js" />
+        <item itemvalue="Node.js.klass.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -60,10 +97,44 @@
       <option name="presentableId" value="Default" />
       <updated>1607494427784</updated>
       <workItem from="1607494429414" duration="38120000" />
+      <workItem from="1607842753240" duration="12233000" />
+      <workItem from="1607937949108" duration="12191000" />
+      <workItem from="1608013557245" duration="111000" />
+      <workItem from="1608364173374" duration="6858000" />
+      <workItem from="1608639460927" duration="5334000" />
+      <workItem from="1608727705342" duration="2311000" />
+      <workItem from="1608730150025" duration="8759000" />
+      <workItem from="1608883338191" duration="24201000" />
+      <workItem from="1608966201690" duration="4526000" />
     </task>
+    <task id="LOCAL-00001" summary="1.3">
+      <created>1607889069398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607889069398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.3" />
   </component>
 </project>

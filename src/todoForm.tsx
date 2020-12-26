@@ -8,29 +8,45 @@ interface TodoFormProps {
 
 const TodoForm: React.FC<TodoFormProps> = (props) => {
 
-    const [iputValue, setiputValue] = useState<string>('')
+    const [inputValue, setiputValue] = useState<string>('')
 
     const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         setiputValue(event.target.value.trim())
     }
     const addTodo = () => {
-        props.onAdd(iputValue)
+        props.onAdd(inputValue)
         setiputValue('')
-    }
+    };
     const keyPress = (e: React.KeyboardEvent) => {
         if (e.key === 'Enter') {
-            props.onAdd(iputValue)
+            props.onAdd(inputValue)
+
+            // @ts-ignore
+            async function fetchAdd() {
+                const newTodo = {title: inputValue, id: Date.now(), completed: false}
+                const response = await fetch('https://5fd0ffe1b485ea0016eedd3b.mockapi.io/api/v1/todo/', {
+                    method: 'POST',
+                    body: JSON.stringify(newTodo)
+                })
+                const data = await response.json()
+                console.log(data)
+            }
+
+            fetchAdd()
+
             setiputValue('')
         }
-    }
+    };
+
 
     return (
         <div className={'todo-form'}>
+
             <div>
             </div>
-            <Input value={iputValue} onKeyPress={keyPress} placeholder={'добавить задачу'}
+            <Input value={inputValue} onKeyPress={keyPress} placeholder={'добавить задачу'}
                    onChange={inputHandler}/>
-            <Button disabled={iputValue.length === 0} type={"primary"} onClick={addTodo}>добавить</Button>
+            <Button disabled={inputValue.length === 0} type={"primary"} onClick={addTodo}>добавить</Button>
         </div>
     );
 };

@@ -41,7 +41,6 @@ export const TodoList: React.FC<TodoList> = ({data, toggle, remove, filter, sear
                 })}
 
             </Modal>
-
             {loading ? <div className="example">
                     <Spin/>
                 </div> :

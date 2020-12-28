@@ -24,12 +24,11 @@ const TodoForm: React.FC<TodoFormProps> = (props) => {
             // @ts-ignore
             async function fetchAdd() {
                 const newTodo = {title: inputValue, id: Date.now(), completed: false}
-                const response = await fetch('https://5fd0ffe1b485ea0016eedd3b.mockapi.io/api/v1/todo/', {
+                 await fetch('https://5fd0ffe1b485ea0016eedd3b.mockapi.io/api/v1/todo/', {
                     method: 'POST',
                     body: JSON.stringify(newTodo)
                 })
-                const data = await response.json()
-                console.log(data)
+
             }
 
             fetchAdd()

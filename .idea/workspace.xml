@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16f88c9c-8213-4d8d-b9ed-b8f648eef1c8" name="Default Changelist" comment="redux toolkit">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="16f88c9c-8213-4d8d-b9ed-b8f648eef1c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/extends/exstend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/extends/exstend.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/todoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +99,9 @@
       <workItem from="1608727705342" duration="2311000" />
       <workItem from="1608730150025" duration="8759000" />
       <workItem from="1608883338191" duration="24201000" />
-      <workItem from="1608966201690" duration="4526000" />
+      <workItem from="1608966201690" duration="10395000" />
+      <workItem from="1609057960538" duration="10419000" />
+      <workItem from="1609142823673" duration="8669000" />
     </task>
     <task id="LOCAL-00001" summary="1.3">
       <created>1607889069398</created>
@@ -114,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607889069398</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="redux toolkit">
+      <created>1608970851125</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608970851125</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.3" />
+    <MESSAGE value="redux toolkit" />
+    <option name="LAST_COMMIT_MESSAGE" value="redux toolkit" />
   </component>
 </project>
